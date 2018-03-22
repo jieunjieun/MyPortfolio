@@ -1,5 +1,5 @@
 <template>
-  <div class = "section3-background">
+  <div class = "section4-background">
       <contents/>
   </div>
 </template>
@@ -15,12 +15,13 @@ export default {
 </script>
 
 <style scoped>
-    .section3-background {
+    .section4-background {
         width: 100vw;
-        height: 900px;
+        height: 850px;
         border: 1px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 100px;
     }
 </style>
