@@ -21,14 +21,15 @@ export default {
         height: 600px;
         background: linear-gradient(-45deg, #96D7AC, #A7D1EB, #ECB2B9, #FFCC74);
         background-size: 400% 400%;
-        -webkit-animation: Gradient 15s ease infinite;
-        -moz-animation: Gradient 15s ease infinite;
-        animation: Gradient 15s ease infinite;
+        -webkit-animation: Gradient 8s ease infinite;
+        -moz-animation: Gradient 8s ease infinite;
+        animation: Gradient 8s ease infinite;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        z-index: 2;
     }
 
    @-webkit-keyframes Gradient {

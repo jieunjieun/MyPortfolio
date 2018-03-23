@@ -19,8 +19,11 @@ export default {
         width: 100vw;
         height: 900px;
         border: 1px solid black;
+        background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        z-index: 2;
     }
 </style>

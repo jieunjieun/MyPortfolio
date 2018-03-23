@@ -18,10 +18,11 @@ export default {
     .section4-background {
         width: 100vw;
         height: 850px;
-        border: 1px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 100px;
+        background-color: white;
+        position: relative;
+        z-index: 2;
     }
 </style>

@@ -23,5 +23,7 @@ export default {
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        position: relative;
+        z-index: 2;
     }
 </style>
