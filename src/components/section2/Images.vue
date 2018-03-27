@@ -1,6 +1,5 @@
 <template>
   <div class = "section2-images">
-      images
   </div>
 </template>
 

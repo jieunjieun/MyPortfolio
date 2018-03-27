@@ -17,13 +17,17 @@ export default {
 <style scoped>
     .section3-background {
         width: 100vw;
-        height: 900px;
-        border: 1px solid black;
-        background-color: white;
+        height: 300px;
+        /* background: linear-gradient(-45deg, #090A0B, #BD1932, #FD6724, #FFCC74);
+        background-size: 400% 400%;
+        -webkit-animation: Gradient 8s ease infinite;
+        -moz-animation: Gradient 8s ease infinite;
+        animation: Gradient 8s ease infinite; */
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
         z-index: 2;
     }
+
 </style>

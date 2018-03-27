@@ -29,22 +29,25 @@ export default {
 
 <style scoped>
     .section3-contents {
-        width: 1000px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        
+        align-items: center;      
+        padding: 30px;
+        border: 2px dotted #535353; 
+        background: white;
     }
 
     .section3-stackbox {
-        width: 170px;
-        height: 170px;
-        border: 15px solid #461D0D;
+        width: 100px;
+        height: 100px;
+        border: 1px solid #461D0D;
         border-radius: 3px;
-        margin: 30px 50px 30px 50px;
-
+        margin-right: 20px;
+        
     }
+
+    .section3-stackbox:nth-last-child(1) {
+      margin-right: 0;
+    } 
 
     .section3-stackbox:hover {
       animation: scaleUp 1s alternate;      

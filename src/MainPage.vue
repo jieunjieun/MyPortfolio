@@ -42,8 +42,9 @@ export default {
     content: "";
     width: 100vw;
     height: 100vh;
-    background-image: url('./assets/travel.jpg');
-    background-size: 100% auto;
+    background-image: url('./assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 120% auto;
     background-position: center;
     z-index: 1;
 }

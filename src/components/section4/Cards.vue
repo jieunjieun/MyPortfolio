@@ -1,7 +1,7 @@
 <template>
   <div class = "section4-cards">
       <div class = "section4-card" v-for="box in card" :key="box.id">
-          <div class = "section4-card-image"></div>
+          <div class = "section4-card-image"><img :src="box.image"/></div>
           <div class = "section4-card-title">{{ box.title }}</div>
           <div class = "section4-card-description">{{ box.description }}</div>
           <div class = "section4-card-more">MORE</div>
@@ -15,8 +15,8 @@ export default {
   data: function () {
       return {
           card: [
-              {image: 'url', title: '프로젝트1', description: '프로젝트1설명 설명 설명 설명asdkfalskdasdfsafsadfaksjdflkajsdf;lkjaslkjflskdjjflaskjfla'},
-              {image: 'url2', title: '프로젝트2', description : '프로젝트2 설명 설명 설명 설명'},
+              {image: '../../../static/images/project1.png', title: 'Beautimage.js', description: ''},
+              {image: '../../../static/images/project2.png', title: 'Dammunity', description : '설명:'},
               {image: 'url3', title: '프로젝ㅌ트3', description : '프로젝트3 설명섦여 섦여서'}
           ]
       }
@@ -49,11 +49,15 @@ export default {
 
 .section4-card-image {
     width: 100%;
-    height: 180px;
+    height: 200px;
     position: absolute;
-    border: 1px solid black;
     top: 0;
+}
 
+.section4-card-image img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .section4-card-title {
@@ -64,7 +68,9 @@ export default {
 .section4-card-description {
     text-align: center;
     width: 300px;
+    font-size: 13px;
     word-wrap: break-word;
+    color: rgba(144, 144, 144, 0.5);
 }
 
 .section4-card-more {
