@@ -42,7 +42,6 @@ export default {
         border: 1px solid #461D0D;
         border-radius: 3px;
         margin-right: 20px;
-        
     }
 
     .section3-stackbox:nth-last-child(1) {
