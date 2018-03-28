@@ -32,14 +32,13 @@ export default {
         display: flex;
         align-items: center;      
         padding: 30px;
-        border: 2px dotted #535353; 
+        /* border: 2px dotted #535353;  */
         background: white;
     }
 
     .section3-stackbox {
         width: 100px;
         height: 100px;
-        border: 1px solid #461D0D;
         border-radius: 3px;
         margin-right: 20px;
     }

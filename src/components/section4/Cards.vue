@@ -2,9 +2,18 @@
   <div class = "section4-cards">
       <div class = "section4-card" v-for="box in card" :key="box.id">
           <div class = "section4-card-image"><img :src="box.image"/></div>
-          <div class = "section4-card-title">{{ box.title }}</div>
-          <div class = "section4-card-description">{{ box.description }}</div>
-          <div class = "section4-card-more">MORE</div>
+          <div class = "section4-card-content">
+            <div class = "section4-card-title">{{ box.title }}</div>
+            <div class = "section4-card-info">
+                <div class = "section4-card-info-info">기간: <div>{{ box.days }}</div></div>
+                <br/>
+                <div class = "section4-card-info-info">분야 : <div>{{ box.subject }}</div></div>   
+                <br/>            
+                <div class = "section4-card-info-info">스킬 : <div>{{ box.skill }}</div></div> 
+                <div class = "section4-card-info-description"> <div>{{ box.description }}</div></div>
+            </div>
+            <a class = "section4-card-more" :href="box.url">MORE</a>
+          </div>          
       </div>
   </div>
 </template>
@@ -15,9 +24,9 @@ export default {
   data: function () {
       return {
           card: [
-              {image: '../../../static/images/project1.png', title: 'Beautimage.js', description: ''},
-              {image: '../../../static/images/project2.png', title: 'Dammunity', description : '설명:'},
-              {image: 'url3', title: '프로젝ㅌ트3', description : '프로젝트3 설명섦여 섦여서'}
+              {image: '../../../static/images/project2.png', title: 'Dammunity',skill: 'HTML, CSS, JS(Vue.js)', subject: 'web UI development', days: '17.10 ~ 17.12' , url: 'https://www.facebook.com/jieun.jieunjieunjieun', description: '대덕소프트웨어마이스터고등학교 학생들의 즐거운 커뮤니케이션을 위한 교내 커뮤니티 사이트 입니다. '},
+              {image: '../../../static/images/project1.png', title: 'Beautimage.js', skill: 'HTML, CSS, JS', subject: 'web UI development', days: '17.08 ~ 17.09',  url: 'https://www.facebook.com/jieun.jieunjieunjieun', description: 'Javascript를 활용한 간단한 이미지 필터 라이브러리 입니다.'},
+              {image: '../../../static/images/project3.png', title: 'infobank 사업부서 페이지', skill: 'HTML, CSS, JS(Vue.js, Node.js)', subject: 'web UI dev & Server dev', days: '18.01 ~ 18.02',  url: 'https://www.facebook.com/jieun.jieunjieunjieun', description: '주식회사 인포뱅크의 사업부서 페이지를 개발하였습니다.'}
           ]
       }
   }
@@ -39,10 +48,7 @@ export default {
 .section4-card {
     width: 330px;
     height: 550px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
     position: relative;
 
 }
@@ -50,8 +56,6 @@ export default {
 .section4-card-image {
     width: 100%;
     height: 200px;
-    position: absolute;
-    top: 0;
 }
 
 .section4-card-image img {
@@ -63,14 +67,39 @@ export default {
 .section4-card-title {
     font-size: 20px;
     margin-bottom: 40px; 
+    margin-top: 10px;
 }
 
-.section4-card-description {
+.section4-card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.section4-card-info {
     text-align: center;
     width: 300px;
     font-size: 13px;
     word-wrap: break-word;
-    color: rgba(144, 144, 144, 0.5);
+}
+
+
+.section4-card-info-info {
+    display: inline-block;
+    color: rgba(144, 144, 144, 0.5);    
+}
+
+.section4-card-info-info div {
+    display: inline-block;
+    color: black;
+}
+
+.section4-card-info-description {
+    color: black;
+    /* font-weight: 70; */
+    margin-top: 30px;
 }
 
 .section4-card-more {
@@ -85,7 +114,13 @@ export default {
     justify-content: center;
     align-items: center;
     font-size: 14px; 
-    font-family: 'Raleway', sans-serif;        
+    font-family: 'Raleway', sans-serif;   
+    text-decoration: none;
+    color: black;
 
+}
+
+.section4-card-info-script {
+    
 }
 </style>

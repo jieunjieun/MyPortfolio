@@ -19,11 +19,7 @@ export default {
     .section1-background {
         width: 100vw; 
         height: 600px;
-        /* background: linear-gradient(-45deg, #96D7AC, #A7D1EB, #ECB2B9, #FFCC74);
-        background-size: 400% 400%;
-        -webkit-animation: Gradient 8s ease infinite;
-        -moz-animation: Gradient 8s ease infinite;
-        animation: Gradient 8s ease infinite; */
+        
         position: relative;
         display: flex;
         justify-content: center;
