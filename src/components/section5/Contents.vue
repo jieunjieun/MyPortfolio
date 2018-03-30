@@ -8,11 +8,33 @@
 </template>
 
 <script>
+require('xmlhttprequest');
 export default {
   name: 'Contents',
   methods: {
       download: function () {
+        //   var data = {
+        //       ids: [1,2,3,4,5]
+        //   };
 
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+              var a;
+              if(xhttp.readyState === 4 && xhttp.status === 200) {
+                  a = document.createElement('a');
+                  a.href = window.URL.createObjectURL(xhttp.response);
+                  a.download = "../../../static/portfolio.pdf";
+                  a.style.display = 'none';
+                  document.body.appendChild(a);
+                  a.click();
+                  console.log('download')
+              }
+          };
+        //   var excelDownloadUrl = "/download"
+        //   xhttp.open("POST", excelDownloadUrl);
+        //   xhttp.setRequestHeader("Content-Type", "application/json");
+        //   xhttp.responseType = 'blob';
+        //   xhttp.send(JSON.stringify(data));
       }
   }  
 }
