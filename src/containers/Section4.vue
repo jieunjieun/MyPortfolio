@@ -1,3 +1,4 @@
+// 섹션 2 컨테이너
 <template>
     <background/>
 </template>

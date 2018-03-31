@@ -14,6 +14,8 @@ export default {
     .section2-images {
         width: 500px;
         height: 300px;
-        border: 1px solid black;
+        background-image: url('../../assets/user.jpg');
+        background-size: 100% auto;
+
     }
 </style>
