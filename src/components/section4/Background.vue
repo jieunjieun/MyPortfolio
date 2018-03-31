@@ -1,3 +1,5 @@
+// 진행한 프로젝트 배경
+
 <template>
   <div class = "section4-background">
       <contents/>

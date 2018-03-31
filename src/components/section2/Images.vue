@@ -1,3 +1,4 @@
+//자기 소개 내용 사진
 <template>
   <div class = "section2-images">
   </div>

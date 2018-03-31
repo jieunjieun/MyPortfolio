@@ -1,3 +1,4 @@
+//헤더 부분 배경
 <template>
     <div class = "section1-background">
         <contents/>

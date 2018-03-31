@@ -1,3 +1,4 @@
+// 스킬 섹션 로고를 위한 내용물
 <template>
   <div class = "section3-contents">
     <div class ="section3-stackbox" v-for = "img in images" :key="img.id">

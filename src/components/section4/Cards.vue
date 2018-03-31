@@ -1,3 +1,4 @@
+// 진행한 프로젝트 카드 1개
 <template>
   <div class = "section4-cards">
       <div class = "section4-card" v-for="box in card" :key="box.id">
@@ -24,6 +25,7 @@ export default {
   data: function () {
       return {
           card: [
+              // 카드 내용 (프로젝트 이름, 스킬, 분야, 기간 , 설명 등)
               {image: '../../../static/images/project2.png', title: 'Dammunity',skill: 'HTML, CSS, JS(Vue.js)', subject: 'web UI development', days: '17.10 ~ 17.12' , url: 'https://www.facebook.com/jieun.jieunjieunjieun', description: '대덕소프트웨어마이스터고등학교 학생들의 즐거운 커뮤니케이션을 위한 교내 커뮤니티 사이트 입니다. '},
               {image: '../../../static/images/project1.png', title: 'Beautimage.js', skill: 'HTML, CSS, JS', subject: 'web UI development', days: '17.08 ~ 17.09',  url: 'https://www.facebook.com/jieun.jieunjieunjieun', description: 'Javascript를 활용한 간단한 이미지 필터 라이브러리 입니다.'},
               {image: '../../../static/images/project3.png', title: 'infobank 사업부서 페이지', skill: 'HTML, CSS, JS(Vue.js, Node.js)', subject: 'web UI dev & Server dev', days: '18.01 ~ 18.02',  url: 'https://www.facebook.com/jieun.jieunjieunjieun', description: '주식회사 인포뱅크의 사업부서 페이지를 개발하였습니다.'}

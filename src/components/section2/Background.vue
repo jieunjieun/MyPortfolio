@@ -1,3 +1,5 @@
+//자기 소개 섹션 배경
+
 <template>
   <div class = "section2-background">
       <contents/>

@@ -1,3 +1,4 @@
+// 마지막 푸터 배경
 <template>
   <div class = "section6-background">
     <contents/>

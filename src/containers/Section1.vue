@@ -1,3 +1,5 @@
+// 섹션 1의 컨테이너
+
 <template>
       <background/>
 </template>

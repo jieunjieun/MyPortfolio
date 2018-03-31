@@ -1,3 +1,4 @@
+// 프로젝트 설명 섹션 내용물 (섹션 타이틀 + 프로젝트 카드)
 <template>
     <div class = "section4-contents">
         <top/>

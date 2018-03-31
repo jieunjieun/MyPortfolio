@@ -1,3 +1,4 @@
+// 자기소개 내용 - 설명
 <template>
   <div class = "section2-description">
       <span class = "section2-title"><strong style = "color: #9B0007;">닭발</strong>을 좋아하는 <strong>박지은</strong>입니다.</span>

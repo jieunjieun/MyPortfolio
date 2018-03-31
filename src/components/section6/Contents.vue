@@ -1,3 +1,4 @@
+// 푸터의 내용물
 <template>
   <div class = "section6-contents-info">
       <div class = "section6-contents-logo">

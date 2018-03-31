@@ -1,7 +1,11 @@
+// 자기소개 섹션 전체적인 내용 (사진 + 글)
+
 <template>
   <div class = "section2-contents">
+    <!-- 소개 -->
     <description/>
-    <images/>
+    <!-- 소개 사진 -->
+    <images/> 
   </div>
 </template>
 

@@ -1,3 +1,5 @@
+// 스킬 섹션 배경
+
 <template>
   <div class = "section3-background">
       <contents/>

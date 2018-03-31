@@ -1,3 +1,4 @@
+// 포트폴리오 다운로드 섹션 배경
 <template>
   <div class = "section5-background">
       <contents/>
