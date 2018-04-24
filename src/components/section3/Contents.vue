@@ -8,20 +8,30 @@
 </template>
 
 <script>
+import html5 from '../../assets/html5.png';
+import jsLogo from '../../assets/js.png';
+import css3 from '../../assets/css3.png';
+import react from '../../assets/react.png';
+import vueLogo from '../../assets/vue.png';
+import node from '../../assets/node.png';
+import mongo from '../../assets/mongo.png';
+import npm from '../../assets/npm.png';
+import webpack from '../../assets/webpack.png'
+
 export default {
   name: 'Contents',
   data: function () {
       return {
         images: [
-          {url: '../../../static/images/html5.png'},
-          {url: '../../../static/images/css3.png'},
-          {url: '../../../static/images/js.png'},
-          {url: '../../../static/images/react.png'},
-          {url: '../../../static/images/vue.png'},
-          {url: '../../../static/images/node.png'},
-          {url: '../../../static/images/mongo.png'},
-          {url: '../../../static/images/npm.png'},
-          {url: '../../../static/images/webpack.png'}
+          {url: html5},
+          {url: css3},
+          {url: jsLogo},
+          {url: react },
+          {url: vueLogo},
+          {url: node},
+          {url: mongo},
+          {url: npm},
+          {url: webpack}
         ]
       }
   }

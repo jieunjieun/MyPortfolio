@@ -5,12 +5,19 @@
       <div class = "line"></div>
       <div class = "section5-contents-description" >다운로드 버튼을 누르면 포트폴리오를 다운받을 수 있습니다.</div>
       <!-- a 태그를 사용해서 다운로드 -->
-      <a class = "section5-contents-download" href = "../../../static/portfolio.pdf" download>포트폴리오 다운로드</a>
+      <a class = "section5-contents-download" :href="pdf" download>포트폴리오 다운로드</a>
   </div>
 </template>
 
 <script>
+import pdf from '../../assets/portfolio.pdf'
+
 export default {
+  data: function () {
+      return {
+          pdf : pdf
+      }
+  },
   name: 'Contents',
   methods: {
   }  
